@@ -54,3 +54,21 @@ console.log(tinderUser)
 //to check if property is available
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+//++++++++++++++Object destructure +++++++++++++++++++++///
+ const course ={
+    coursename : "js in hindi",
+    price : '999',
+    courseInstructor : "hitesh"
+ }
+
+ //course.courseInstructor
+
+ const {courseInstructor: Instructor} = course
+ console.log(Instructor) // destructure of obj
+
+//  {
+//     "name" : "hitesh",
+//     "coursename" : "js",
+//     "price" : "free",
+//  }
