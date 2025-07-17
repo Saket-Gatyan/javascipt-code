@@ -61,3 +61,5 @@ addTwo(5)    // cannot , throws ERROR MESSAGE
 const addTwo = function(num){ //    VARIABLES IN JS ARE POWERFUL THEY CAN HOLD FUNCTIONS TOO. 2. THIS SPECIAL INITIALIZATION IS CALLED EXPRESSION 3. addtwo() doesnt contain return vakue of function,  IT JUST STORES THE FUNCTION
     return num + 2
 }
+
+
