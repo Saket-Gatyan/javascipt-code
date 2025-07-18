@@ -46,8 +46,6 @@ let val1;
 
 val1 = nul ?? 10 ?? 20 // 10 , first value jo mile 
 
-
-
 console.log(val1);
 
 
