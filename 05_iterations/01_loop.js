@@ -32,4 +32,13 @@
 // }
 
 
-let myArray = ["flash","superman","batman"]
+//+++++++++++conditions applied on loop++++++//////
+
+for (let i = 1; i < 20; i++) {
+
+    if (i==5){
+        console.log('DETECTED 5');
+        continue;
+    }
+    console.log(`the value of i is ${i}`)    
+}
