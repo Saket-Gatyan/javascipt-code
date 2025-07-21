@@ -17,7 +17,7 @@ const userEmail = []
 
 // false , 0 , -0 , bigInt 0n  , '', "", null , underdefined , NaN
 
-// truty values
+// truthy values
 
 // true ,1 , 1000 , "james",  "0" , 'false' , " " , [ ] , {}, function(){} (empty function),
 

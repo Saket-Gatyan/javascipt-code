@@ -1,0 +1,97 @@
+
+const title = document.getElementById('title')
+
+
+
+title.innerHTML
+'Dom learning <span style="display : none;">Coffee</span>' // pura html line
+
+title.innerText
+'Dom learning'  // only display text (text which is display on the website)
+
+title.textContent   // displayed text + hidden text (by CSS) , ie. full text is shown
+'Dom learning Coffee'
+
+
+document.querySelector('#title') // selecting by id
+//output -> <h1 id="title" class="heading">Dom learning <span style ='display : none;'>Coffee</span></h1>
+
+document.querySelector('input[type = "password"]')
+
+document.querySelector('ul')
+/*out-><ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+*/
+
+
+const myul = document.querySelector('ul') //selects or returns the first <ul>
+ // here only one ul is available 
+
+
+myul.querySelector('li') // selects or returns the first <li> ie. <li>one</li>
+
+
+
+
+
+const turnGreen = myul.querySelector('li')
+// <li>one</li> stored in variable turnGreen
+
+turnGreen.style.backgroundColor = "green" // object hai li tag 
+// this is basically obj manipulation done to turn the background of first list element green.
+
+
+
+
+turnGreen.style.padding = "2px"
+// 2px padding for first list element
+
+
+
+
+turnGreen.innerText = "five" // change text in list element
+
+
+//++++ Important things +++ ///
+
+document.querySelectorAll('li') // returns a nodelist which not a array but some methods like forEach can be applied on it , so now
+
+//NodeList(3) [li,li,li]
+//0 : li
+//1 : li
+//2 : li 
+
+const tempList = document.querySelectorAll('li') // stored in variable
+
+tempList.style.color = 'green' // returns error
+
+tempList[0].style.color = 'green' // works
+tempList[0].style.backgroundColor = '#212121'
+
+
+
+
+tempList.forEach(function (l) {l.style.backgroundColor = "green"} )  // turns every li bk color to green
+
+// we want to use methods like map() we have to convert the nodearray to normal array
+
+
+//+++ Updated the html page by adding class list-item and adding another li element four++
+
+
+document.getElementsByClassName('list-item') 
+templilist.forEach(function (li) {console.log(li)} )  // error for.each is not a function of getElementsByClassName('list-item') or HTMLCOLLECTION
+
+// To covert to Array 
+Array.from(templilist) 
+
+const myArray = Array.from(templilist)
+
+// const myArray = Array.from(templilist)
+
+//myArray.forEach(function (li) {li.style.color = "orange"} ) 
+
+// turns the list elements to orange
